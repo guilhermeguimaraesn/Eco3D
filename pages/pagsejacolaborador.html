@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Eco 3D - Seja um colaborador</title>
+
+    <script src="../menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../assets/4.png" alt="">
+        <div class="menus">
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../index.html" rel="next">Página Inicial</a></li>
+                    <li><a href="./pagmaterialapoio.html" rel="next"  >Material de apoio</a></li>
+                    <li><a href="./pagcoletas.html">Locais de Coleta</a></li>
+                    <li><a href="./doadores.html" >Doadores Credenciados</a></li>
+                    <li><a href="./pagsejacolaborador.html" class="select">Seja um colaborador</a></li>
+                    <li><a href="./sac.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html" rel="next" class="select">Página Inicial</a></li>
+                        <li><a href="./pagmaterialapoio.html" rel="next">Material de apoio</a></li>
+                        <li><a href="./pagcoletas.html">Locais de Coleta</a></li>
+                        <li><a href="./doadores.html">Doadores Credenciados</a></li>
+                        <li><a href="./pagsejacolaborador.html">Seja um colaborador</a></li>
+                        <li><a href="./sac.html">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu">
+    
+            </div>
+        </div>
+       
+    </header>
+    <main>
+        <div class="content-colaborador">
+            <div class="text-colaborador">
+                <h1>Seja um Herói Ambiental: Faça parte da Inovação 3D!</h1>
+
+                <h2>Faça a Diferença</h2>
+                <p>
+                    Imagine transformar aquelas garrafas PET que você descarta no lixo em filamentos 3D, uma inovação
+                    que tem o poder de moldar um futuro mais sustentável e brilhante. Bem-vindo ao nosso movimento
+                    de doação de garrafas PET para a fabricação de filamentos 3D!
+                    <br>
+                    Você já pensou que aquelas garrafas PET podem ter um destino muito mais nobre do que apenas se
+                    tornar
+                    lixo? Ao doar suas garrafas PET para nós, você está contribuindo para a criação de filamentos 3D, um
+                    material valioso que alimenta a impressão 3D e revoluciona indústrias, de prototipagem rápida a
+                    projetos
+                    educacionais.
+                </p>
+            </div>
+
+            <div class="cadastro-colaborador">
+                <form>
+                    <fieldset>
+                        <legend><b>Cadastro de Colaboradores</b></legend>
+
+                        <div class="inputBox">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" name="nome" id="nome" class="inputUser" required>
+                        </div>
+                   
+                        <div class="inputBox">
+                            <label for="e-mail">E-mail</E-mail></label>
+                            <input type="text" name="e-mail" id="e-mail" class="inputUser" required>
+                        </div>
+                       
+                        <div class="inputBox">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                        </div>
+
+                       
+                       <div class="inputBox">
+                        <label for="sex">Sexo</label>
+                        <select name="sex" id="sex">
+                            <option value="0">Masculino</option>
+                            <option value="1">Feminino</option>
+                            <option value="3">Prefiro não declarar</option>
+                        </select>
+                       </div>
+                        
+                       <div class="inputBox">
+                        <label for="data_nascimento">Data de Nascimento</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" riquired>
+                       </div>
+
+                       <div class="inputBox">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    </div>
+                        
+                       <div class="user-adress">
+                            <div class="inputBox">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                            </div>
+
+                            <div class="inputBox">
+                                <label for="estado">Estado:</label>
+                                <select name="estado" id="estado">
+                                    <option value="ac">AC</option>
+                                    <option value="al">AL</option>
+                                    <option value="ap">AP</option>
+                                    <option value="am">AM</option>
+                                    <option value="ba">BA</option>
+                                    <option value="ce">CE</option>
+                                    <option value="df">DF</option>
+                                    <option value="es">ES</option>
+                                    <option value="go">GO</option>
+                                    <option value="ma">MA</option>
+                                    <option value="mt">MT</option>
+                                    <option value="ms">MS</option>
+                                    <option value="mg">MG</option>
+                                    <option value="pa">PA</option>
+                                    <option value="pb">PB</option>
+                                    <option value="pr">PR</option>
+                                    <option value="pe">PE</option>
+                                    <option value="pi">PI</option>
+                                    <option value="rj">RJ</option>
+                                    <option value="rn">RN</option>
+                                    <option value="rs">RS</option>
+                                    <option value="ro">RO</option>
+                                    <option value="rr">RR</option>
+                                    <option value="sc">SC</option>
+                                    <option value="sp">SP</option>
+                                    <option value="se">SE</option>
+                                    <option value="to">TO</option>
+                                </select>
+                            </div>
+                    
+                        </div>
+
+                      <div class="button-submit">
+                        <button>Cadastrar</button>
+                      </div>
+                    </fieldset>
+                
+                </form>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>

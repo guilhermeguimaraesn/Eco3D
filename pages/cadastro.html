@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(105, 118, 105);
+        }
+
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+            font-size: 13px;
+        }
+
+        fieldset {
+            border: 3px solid rgb(116, 201, 116);
+        }
+
+        legend {
+            border: 1px solid rgb(116, 201, 116);
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(116, 201, 116);
+            border-radius: 5px;
+        }
+
+        .inpuBox {
+            position: relative;
+        }
+
+        .inputUser {
+            color: black;
+            font-size: 11px;
+            width: 100%;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        #data_nascimento {
+            border: none;
+            padding: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #submit {
+            background-color: rgb(33, 44, 33);
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            outline: none;
+            padding: 6px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastro de Colaboradores</b></legend>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <hr>
+                <div class="inputBox">
+                    <input type="text" name="e-mail" id="e-mail" class="inputUser" required>
+                    <label for="e-mail">E-mail</E-mail></label>
+                </div>
+                <hr>
+                <div class="inputBox">
+                    <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone">Telefone</label>
+                </div>
+                <title>Formulário</title>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+
+                <p>Quantos Filhos:</p>
+                <input type="radio" id="nenhum" name="quantidade_filhos" value="nenhum" required>
+                <label for="nenhum">Nenhum</label>
+                <input type="radio" id="de_1_a_3_filhos" name="quantidade_filhos" value="de_1_a_3_filhos" required>
+                <label for="de_1_a_3_filhos">De 1 a 3:</label>
+                <input type="radio" id="de_3_a_5_filhos" name="quantidade_filhos" value="de_3_a_5_filhos" required>
+                <label for="de_3_a_5_filhos">De 3 a 5 filhos</label>
+                <input type="radio" id="mais_de_5_filhos" name="quantidade_filhos" value="mais_de_5_filhos" required>
+                <label for="mais_de_5_filhos">Mais de 5 filhos</label>
+
+                <p>Renda Familiar:</p>
+                <input type="radio" id="de_1_a_3_salarios" name="renda_familiar" value="de_1_a_3_salarios" required>
+                <label for="de_1_a_3_salarios">De 1 a 3 salarios</label>
+                <input type="radio" id="de_3_a_5_salarios" name="renda_familiar" value="de_3_a_5_salarios" required>
+                <label for="de_3_a_5_salarios">De 3 a 5 salarios</label>
+                <input type="radio" id="mais_de_5_salarios" name="renda_familiar" value="mais_de_5_salarios" required>
+                <label for="mais_de_5_salarios">Mais de 5 salarios</label>
+                <hr>
+                <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" riquired>
+                <hr>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado">Estado:</label>
+                </div>
+                <hr>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade">Cidade</label>
+                </div>
+                <hr>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco">Endereço:</label>
+                </div>
+                <hr>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+            <p><a href="index.html">pagina inical</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>

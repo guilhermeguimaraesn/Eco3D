@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Eco 3D - Sobre</title>
+
+    <script src="../menu.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="../assets/4.png" alt="">
+        <div class="menus">
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../index.html" rel="next">Página Inicial</a></li>
+                    <li><a href="./pagmaterialapoio.html" rel="next">Material de apoio</a></li>
+                    <li><a href="./pagcoletas.html">Locais de Coleta</a></li>
+                    <li><a href="./doadores.html">Doadores Credenciados</a></li>
+                    <li><a href="./pagsejacolaborador.html">Seja um colaborador</a></li>
+                    <li><a href="./sac.html" class="select">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html" rel="next">Página Inicial</a></li>
+                        <li><a href="./pagmaterialapoio.html" rel="next">Material de apoio</a></li>
+                        <li><a href="./pagcoletas.html">Locais de Coleta</a></li>
+                        <li><a href="./doadores.html">Doadores Credenciados</a></li>
+                        <li><a href="./pagsejacolaborador.html">Seja um colaborador</a></li>
+                        <li><a href="./sac.html" class="select">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="sobre-container">
+            <h1>
+                Conheça um pouco mais sobre o nosso projeto
+
+            </h1>
+            <p>A "ECO 3D" é uma plataforma inovadora que visa transformar a impressão 3D em uma força positiva,
+                promovendo a sustentabilidade e a educação especializada. Oferecendo cursos, recursos de reciclagem e
+                uma comunidade colaborativa, a plataforma não apenas capacita os usuários na tecnologia, mas também
+                abraça os Objetivos de Desenvolvimento Sustentável (ODS) para criar um impacto positivo e duradouro.
+                Seja bem-vindo à "ECO 3D", onde a impressão encontra a sustentabilidade</p>
+            
+            <div class="integrantes">
+                <h2>EQUIPE THE FORGOTTEN</h2>
+                <div class="integrantes-cards">
+                    <div class="integrante-card" id="link1">
+                        <img src="../assets/breno.jpg" alt="">
+                        <span>Breno Matos Couto<img src="../assets/logotipo-do-linkedin.png" alt=""></span>
+                    </div>
+                    <div class="integrante-card" id="link2">
+                        <img src="../assets/fabio.jpg" alt="">
+                        <span>Fábio Henrique Corrêa <img src="../assets/logotipo-do-linkedin.png" alt=""></span>
+                    </div>
+                    <div class="integrante-card" id="link3">
+                        <img src="../assets/guilherme.jpg" alt="">
+                        <span>Guilherme Guimarães Nascimento<img src="../assets/logotipo-do-linkedin.png" alt=""></span>
+                    </div>
+                    <div class="integrante-card" id="link4">
+                        <img src="../assets/luiz.jpg" alt="">
+                        <span>Luiz Eduardo Xavier de Almeida<img src="../assets/logotipo-do-linkedin.png" alt=""></span>
+                    </div>
+                    <div class="integrante-card" id="link5">
+                        <img src="../assets/renan.jpg" alt="">
+                        <span>Renan Natalino de Sousa<img src="../assets/logotipo-do-linkedin.png" alt=""></span>
+                    </div>
+                    <div class="integrante-card" id="link6">
+                        <img src="../assets/thiago.jpg" alt="">
+                        <span>Thiago Henrique Silva Campos<img src="../assets/logotipo-do-linkedin.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.integrante-card');
+  
+    cards.forEach(card => {
+      card.addEventListener('click', function() {
+        let linkId = this.id;
+        let link;
+  
+        switch(linkId) {
+          case 'link1':
+            link = 'https://www.linkedin.com/in/breno-mattos-b82a961a6/';
+            break;
+          case 'link2':
+            link = 'https://www.linkedin.com/in/f%C3%A1biohenrique22?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app';
+            break;
+          case 'link3':
+            link = 'https://www.linkedin.com/in/guilhermegn';
+            break;
+          case 'link4':
+            link = 'https://www.linkedin.com/in/luizeduardoxavierdealmeida';
+            break;
+          case 'link5':
+            link = 'https://www.linkedin.com/in/Natalino27';
+            break;
+          case 'link6':
+            link = 'http://www.linkedin.com/in/thiago-henrique-silva-campos-9a0609176';
+            break;
+          default:
+            link = 'https://www.defaultlink.com';
+        }
+  
+        window.open(link, '_blank');
+      });
+    });
+  });
+    </script>
+    <script src="../arquivo.js" defer></script>
+</body>
+
+</html>
